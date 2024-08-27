@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/web\ poster.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    text-align: left;
+    margin-top: 160px;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    line-height: 1.2;
+    /* Add this line */
+}
+
+.header-text h1 span {
+    color: #fd0202;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.about-text {
+    flex: 1;
+
+}
+
+.about-image {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    /* Adjust as needed */
+    border-radius: 15px;
+    /* Curved edges */
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+a .tab-links {
+    cursor: pointer;
+    color: #007bff;
+    position: relative;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.tab-links.active-link {
+    font-weight: bold;
+    color: #ff004f;
+}
+
+.tab-contents {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.tab-contents.active-tab {
+    display: block;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.skills,
+.experience,
+.education {
+    margin-top: 20px;
+    padding: 10px;
+    background: #222;
+    border-radius: 8px;
+    color: #fff;
+}
+
+#skills ul,
+#experience ul,
+#education ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li,
+#experience li,
+#education li {
+    margin-bottom: 10px;
+}
+
+.skills span,
+.experience span,
+.education span {
+    display: block;
+    font-weight: bold;
+}
+
+#skills span {
+    color: #ff004f;
+}
+
+.services-list,
+.portfolio-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service,
+.portfolio-item {
+    flex: 1;
+    max-width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.service h3,
+.portfolio-item h3 {
+    margin-top: 10px;
+}
+
+.service p,
+.portfolio-item p {
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+form button {
+    padding: 10px;
+    width: fit-content;
+    background: #ff004f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #e60047;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #111;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.social-links a:hover {
+    color: #ff004f;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details,
+.contact-form {
+    flex: 1;
+    width: auto;
+    padding: 40px;
+}
+.section {
+    padding: 50px;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact-details, .contact-form {
+    flex: 1;
+    margin: 20px;
+}
+.sub-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.social-icons {
+    margin-bottom: 20px;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #ff0040; /* LinkedIn Blue */
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 10px;
+    background-color: #ff0040;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #ff0040;
+}
+.contact-details button {
+    padding: 10px 20px;
+    background-color: #ff0040;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-details button:hover {
+    background-color: #ff0040;
+}
